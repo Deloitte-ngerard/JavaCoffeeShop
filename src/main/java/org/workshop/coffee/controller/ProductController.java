@@ -74,7 +74,7 @@ public class ProductController {
         }
         response.setContentType("text/html");
         var writer = response.getWriter();
-        buildProductPage(param, prod.getDescription(), prod.getProductType(), prod.getPrice(), writer);
+        buildProductPage(prod.getProductName(), prod.getDescription(), prod.getProductType(), prod.getPrice(), writer);
         writer.flush();
     }
 
